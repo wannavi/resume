@@ -1,14 +1,6 @@
-import {
-  Box,
-  Grid,
-  GridItem,
-  Image,
-  Link,
-  Text,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Profile from "../components/Profile";
 
 const Home: NextPage = () => {
