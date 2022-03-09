@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <Container maxW="container.md">
+    <Container maxW="container.lg">
       <Navbar />
       <Box p={4}>{children}</Box>
     </Container>
