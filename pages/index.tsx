@@ -1,4 +1,15 @@
-import { Box, Link, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { LinkIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Divider,
+  ListIcon,
+  ListItem,
+  Link,
+  Stack,
+  Text,
+  UnorderedList,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Layout from "../components/Layout";
 import Profile from "../components/Profile";
@@ -29,48 +40,43 @@ const Home: NextPage = () => {
             borderRadius={"lg"}
           >
             <Text fontSize="2xl">Background</Text>
-            <Text>
-              Irure est do sunt incididunt aliqua ullamco est voluptate. Nostrud
-              aliqua tempor sit proident nisi quis eiusmod ea cupidatat id eu
-              eiusmod minim do. Minim in deserunt aliquip adipisicing sunt
-              aliquip cupidatat esse cupidatat. Aliqua reprehenderit consequat
-              consequat sunt culpa consequat et non est eu reprehenderit tempor
-              esse exercitation. Mollit do reprehenderit laborum eiusmod ea do
-              eu officia nisi aliqua esse. Minim elit magna tempor fugiat
-              adipisicing reprehenderit quis officia do veniam est aute Lorem
-              pariatur. Voluptate laborum exercitation enim dolor ipsum duis
-              culpa enim voluptate eiusmod sunt. Incididunt dolor incididunt
-              magna in. Pariatur eu ut sit fugiat est ex cupidatat reprehenderit
-              aliqua sint. Amet laborum aute amet duis. Aliqua nisi aliqua aute
-              veniam commodo magna ipsum sint minim velit do. Ullamco irure
-              Lorem commodo excepteur dolore ex laboris reprehenderit aliqua
-              laborum aliquip. Tempor id enim cillum proident et commodo mollit
-              enim amet mollit. Excepteur esse anim pariatur adipisicing. Do
-              nisi consectetur eu occaecat. Anim velit voluptate eiusmod amet eu
-              exercitation proident dolor proident culpa. Excepteur tempor do ex
-              ullamco consectetur. Ad excepteur ea reprehenderit aliqua
-              consequat. Lorem quis sit sunt Lorem aliquip elit aliquip
-              incididunt nulla proident magna pariatur aute deserunt. Qui labore
-              amet non cupidatat excepteur Lorem nostrud quis anim eu dolore ad.
-              Mollit aliqua ut officia ad veniam ullamco do. Velit amet
-              incididunt excepteur laborum enim. Nulla dolore esse sit nisi
-              aliquip aute. Eiusmod dolore elit cillum elit proident nulla.
-              Adipisicing adipisicing ullamco proident aute ad proident proident
-              proident fugiat mollit culpa esse in laboris. Magna cillum culpa
-              culpa quis eiusmod ipsum magna commodo dolor officia nulla
-              exercitation esse ullamco. Dolore commodo aliquip nisi ea
-              consectetur nulla eu ullamco cupidatat ipsum magna. Exercitation
-              quis eiusmod ea qui fugiat excepteur id laborum magna. Ex ut magna
-              exercitation sit excepteur anim incididunt in ullamco minim et
-              exercitation qui. Sint elit deserunt nostrud ad ad. Sint officia
-              labore enim et nisi nostrud qui ea aliquip. Id dolor sint nostrud
-              proident dolor in incididunt velit id. Laboris minim dolor ea
-              aliqua Lorem excepteur non ad fugiat duis. Occaecat sunt cupidatat
-              mollit velit adipisicing do ea. Exercitation pariatur labore enim
-              anim ad eiusmod magna excepteur esse. Pariatur laboris irure non
-              sint cupidatat laborum occaecat nisi voluptate consectetur veniam
-              aliqua.
-            </Text>
+            <Divider />
+            <Stack>
+              <Text>ABOUT</Text>
+              <UnorderedList pl={6}>
+                <ListItem fontSize={"sm"}>Web application developer</ListItem>
+                <ListItem fontSize={"sm"}>and noob hacker :-(</ListItem>
+              </UnorderedList>
+              <br />
+              <Text>EXPERIENCE</Text>
+              <UnorderedList pl={6}>
+                <ListItem fontSize={"sm"}>
+                  Inha univ, Information and Communication Engineering (2018.03
+                  ~ )
+                </ListItem>
+                <ListItem fontSize={"sm"}>
+                  Navy Cyber Operation Center (2020.05.04 ~ 2022.01.03)
+                </ListItem>
+              </UnorderedList>
+              <br />
+              <Text>PROJECT & HACKATHON</Text>
+              <UnorderedList pl={6}>
+                <ListItem fontSize={"sm"}>
+                  <Link href="https://github.com/osamhack2021/ai_web_RISKOUT_BTS">
+                    <ListIcon as={LinkIcon} color="green.500" />
+                    Risk out - NLP Based Social Security Platform (🏅
+                    국방부장관상 / Minister of National Defense Award)
+                  </Link>
+                </ListItem>
+                <ListItem fontSize={"sm"}>
+                  <Link href="https://github.com/mint-rare">
+                    <ListIcon as={LinkIcon} color="green.500" />
+                    멋쟁이 사자처럼 (NFT 교육), MINT RARE - 스마트 컨트랙트
+                    기반의 NFT 마켓 서비스
+                  </Link>
+                </ListItem>
+              </UnorderedList>
+            </Stack>
           </Stack>
         </Box>
       </Box>
