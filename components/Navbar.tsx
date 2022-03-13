@@ -52,7 +52,7 @@ export default function Navbar() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            Reeul, λ
+            Cargo
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
