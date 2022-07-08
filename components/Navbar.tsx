@@ -165,14 +165,10 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Resume",
-    href: "#",
+    href: "/",
   },
   {
-    label: "Projects",
-    href: "#",
-  },
-  {
-    label: "Site map",
-    href: "#",
+    label: "Tools",
+    href: "/tools",
   },
 ];
