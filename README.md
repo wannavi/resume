@@ -1,5 +1,3 @@
-[reeul.github.io/resume](https://reeul.github.io/resume)
-
 ## Resume (with Next.js)
 
 - 간단한 자기소개 및 이력서를 위해 만든 페이지입니다.
